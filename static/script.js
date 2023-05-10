@@ -50,7 +50,9 @@
     // Apply the blur
     wheel.classList.add('blur');
   });
-
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
   wheel.addEventListener('transitionend', () => {
     // Remove blur
     wheel.classList.remove('blur');
@@ -65,7 +67,8 @@
     // Set the real rotation instantly without animation
     wheel.style.transform = `rotate(${actualDeg}deg)`;
     imageprize.src = "static/prizes/"+prize_images[selected_deg];
-    prize.classList.remove('d-none');
+    setTimeout(() => {  prize.click(); }, 1300);
+    
 
   });
 })();
