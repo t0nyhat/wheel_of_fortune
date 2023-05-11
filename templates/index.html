@@ -10,13 +10,8 @@
     
     
     <h1>номер # {{ id }}</h1>
-    <div id="app">
-      <img class="marker" src="static/marker.png" />
-      <img class="wheel" src="static/wheel.png" />
-      <img class="button" src="static/button.png" />
-    </div>
-    <script src="static/confetti.js"></script>
-    <script src="static/script.js"></script>
-    
+    <div class="container">
+      <img src="{{ qrcode(http://лотерея-тимофея.рф/) }}">
+    </div>    
   </body>
 </html>
