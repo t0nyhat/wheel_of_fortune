@@ -11,16 +11,17 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
-    <div class="container">
+    <div class="container overflow-auto">
       <div class="text-center">
-        <img src="static/logo.png" class="m-4" />
+        <img src="static/logo.png" class="m-4" style="width: 400px;"/>
       </div>
-      <img class="marker" src="static/marker.png" />
-      <img class="wheel" src="static/wheel.png" />
-      <img class="button" src="static/button.png" />
+      <img class="marker" src="static/marker.png" style="width: 40px;"/>
+      <img class="wheel" src="static/wheel.png" style="width: 450px;"/>
+      <img class="button" src="static/button.png" style="width: 150px;"/>
     </div>
     <div class="d-flex justify-content-center">
       <button
@@ -39,9 +40,9 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+        <div class=" modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ваш приз!</h5>
+            <h5 class="fw-bold text-warning modal-title" id="exampleModalLabel">Это мог бы быть Ваш приз!</h5>
             <button
               type="button"
               class="btn-close"
@@ -53,9 +54,11 @@
             <div class="text-center">
               <img class="imageprize" />
             </div>
+            <h5 class=" fw-bold text-warning">Приходи на ярмарку и выиграй!</h5>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-dismiss="modal">Закрыть</button>
+            
           </div>
         </div>
       </div>

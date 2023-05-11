@@ -1,16 +1,17 @@
 
 .marker {
-  width: 50px;
+  width: 70px;
   display: block;
   margin: auto auto;
   cursor: pointer;
 }
 .wheel {
-  width: 100%;
   margin: auto auto;
   display: block;
 }
-
+.container img{
+  max-width: 90%;
+}
 
 body {
 	background:
@@ -54,7 +55,6 @@ body {
     filter: blur(0px);
   }
 }
-
 
 
 
