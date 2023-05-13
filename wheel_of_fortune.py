@@ -18,10 +18,13 @@ def index_view_game(angle):
     context = {'angle': angle}
     return render_template('game.html', **context)
 @app.route('/tickets')
-
 def index_view_tickets():
     """Призовая игра"""
     return render_template('tickets.html')
+@app.route('/reklama')
+def index_view_reklama():
+    """Реклама"""
+    return render_template('reklama.html')
 
 @app.route('/qrcode/<int:id>')
 def index_view_qrcode(id):
